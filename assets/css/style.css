@@ -1,6 +1,6 @@
 body{   background-color: rgba(255, 158, 11, 0.678);}
 
-        button,form {margin: 10px;}
+        button,form {margin: 5px;}
    
         button {color: rgb(77, 46, 1)}
 
@@ -14,13 +14,14 @@ body{   background-color: rgba(255, 158, 11, 0.678);}
 
         .container.jumbotron,.container-fluid.jumbotron
         
-            {padding-top:5px;
-            padding-bottom: 5px;}
+            {padding-top:2px;
+            padding-bottom: 2px;}
 
-        button, html input[type=button], input[type=reset], input[type=submit]{
+        button, html input[type=button], input[type=reset], input[type=submit]
+        {
         background-color:black;
         color:rgba(255, 158, 11, 0.678);
-        box-shadow: 0 2px silver ;
+        box-shadow: 0 5px silver ;
         border-color:darkgreen;
         border-radius: 15px;
         padding: 5px;
