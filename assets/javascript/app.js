@@ -1,9 +1,9 @@
 $(document).ready(function () {
     var director = ["Stanley Kubrick", "Brian DePalma", "Quentin Tarantino", "Steven Spielberg", "Martin Scorsese"]
-    GIF = " "
+    GIFArea = " "
     //Render Button//
     //functon displaying director data!!!//
-    function renderButton() {
+    function renderButtons() {
         //delete dierctor buttons before adding new.//
         $("#director-view").empty();
         //looping through the array.//
@@ -44,9 +44,9 @@ $(document).ready(function () {
     $(document).on('click', 'button', function () {
         //delete directors prior to adding new ones //
         //necessary otherwise we will have repeat.//
-        $('#GIF').empty();
+        $('#GIFArea').empty();
         var b = $(this).attr('date-name'); //'this' is for the bitton clicked//
-        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + b + "&api_key=ndgx0YAub80qCCtqD2EBAPGYpHA7nvyg";
+        var queryURL = `https://api.giphy.com/v1/gifs/search?q=${b}&api_key=UrD6aY3j3PH76CGbqhdfYC9Jvy0NzyOA`;
         console.log(queryURL);
 
         //ajax call
@@ -80,7 +80,7 @@ $(document).ready(function () {
                     gifDiv.append(r)
                         .append(gifImage);
                     //prepending data not necessary because cleared//
-                    $('#GIF').prepend(gifDiv);
+                    $('#GIFArea').prepend(gifDiv);
                 }
             });
     });
